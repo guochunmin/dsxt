@@ -1,0 +1,185 @@
+@import "./base/mixin.less";
+@import "./base/common.less";
+@import "./shared/detailHeader.less";
+@import "./shared/footer.less";
+@import "./shared/productModule.less";
+.cart-content{
+    position: absolute;
+    top:0;
+    bottom: 50px;
+    width:100%;
+    overflow-y: scroll;
+    border-bottom:1px solid #ddd;
+    p{
+        line-height: 50px;
+    }
+}
+.cart-products-wrapper{
+    .shop-panel{
+        background-color:#fff;
+        padding:10px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+.shop-title{
+    .flex-wrapper('nowrap');
+    line-height:45px;
+    border-bottom: 1px solid #ddd;
+    .shop-check{
+        width:40px;
+        height:100%;
+        padding-left:10px;
+        padding-right:10px;
+        color:gray;
+        .iconfont{
+            font-size:2rem;
+            &.icon-checked{
+                color:@color;
+            }
+        }
+    }
+    .shop-name{
+        width: calc(~'100% - 70px');
+        font-size:1.6rem;
+        font-weight: 600;
+    }
+    .shop-handdle{
+        width:36px;
+        color:@color;
+        .iconfont{ 
+            font-size: 1.6rem;
+            padding-left:10px;
+            padding-right:20px;
+            &.icon-delete{
+                font-size:1.8rem;
+            }
+        }
+    }
+}
+.shop-product{
+    .flex-wrapper('nowrap');
+    .product-check{
+        width:40px;
+        height:100%;
+        padding-left:10px;
+        padding-right:10px;
+        color:gray;
+        .iconfont{
+            font-size:2rem;
+            &.icon-checked{
+                color:@color;
+            }
+        }  
+    }
+    .product-img{
+        width:120px;
+        font-size: 0;
+        img{
+            width:100%;
+        }
+    }
+}
+.product-detail{
+    width: calc(~'100% - 160px');
+    padding-left:5px;
+    padding-right:5px;
+    .product-name{
+        font-size:1.7rem;
+        .text-ellipsis();
+        padding-bottom:5px;
+    }
+    .product-info{
+        color:gray;
+        span{
+            margin-right:5px;
+        }
+    }
+    .product-price{}   
+    .old-price{
+        text-decoration: line-through;
+        margin-right: 20px;
+        font-style:Italic;
+        color:gray;
+    }
+    .new-price{
+        font-size: 1.6rem;
+        font-weight: 800;
+        color:@color;
+    }
+    .product-handdle{
+        padding-top:5px;
+        padding-bottom:5px;
+        line-height: 25px;
+        .flex-wrapper('nowrap','flex-start');
+        .icon-delete{
+            height:25px;
+            font-size:1.8rem;
+            padding-left:10px;
+            padding-right:10px;
+        }
+    }
+    .product-num-wrapper{
+        display:inline-block;
+        border:1px solid #ddd;
+        font-size: 0;
+        height:25px;
+        input{
+            float: left;
+            height:100%;
+            width:50px;
+            text-align: center;
+            border-left:1px solid #ddd;
+            border-right:1px solid #ddd;
+        }
+        span{
+            float: left;
+            width:25px;
+            height:100%;
+            text-align: center;
+            font-size:2rem;
+            font-weight: 600;
+            cursor: pointer;
+            color:gray;
+        }
+    }
+}
+.cart-bottom{
+    position: absolute;
+    bottom: 0;
+    height:50px;
+    width:100%;
+    line-height:50px;
+    background-color: #fff;
+    #checkAll{
+        float: left;
+        padding-left:20px;
+        padding-right:10px;
+        .iconfont{
+            font-size:2rem;
+            color:gray;
+            &.icon-checked{
+                color:@color;
+            }
+        }
+        span{
+            font-size:1.4rem;
+        }
+    }
+    .settle-wrapper{
+        overflow: hidden;
+        height:100%;
+        text-align: right;
+        .total-price{
+            display:inline-block;
+            padding-right: 10px;
+            color:#f33;
+        }
+        #settled{
+            float:right;
+            background-color: #f33;
+            padding:0 30px;
+            color:#fff;
+        }
+    }
+}

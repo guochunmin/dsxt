@@ -1,0 +1,24 @@
+module.exports={
+	baseNavData:[
+		{
+			label:'首页',
+			icon:'home',
+			path:'/index'
+		},
+		{
+			label:'分类',
+			icon:'fenlei',
+			path:'/category'
+		},
+		{
+			label:'购物车',
+			icon:'cart',
+			path:'/cart'
+		},
+		{
+			label:'我的',
+			icon:'personal-center',
+			path:'/personal'
+		}
+	]
+}

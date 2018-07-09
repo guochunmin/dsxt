@@ -1,0 +1,29 @@
+@import "./../base/mixin.less";
+.side-nav-wrapper{
+    float: left;
+    width:100px;
+    height:100%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    ul{
+        height:100%;
+    }
+    li{
+        .text-ellipsis();
+        line-height: 40px;
+        border-left: 2px solid transparent;
+        text-align: center;
+        font-size: 1.6rem;
+        color: gray;
+        font-weight: normal;
+        &.active{
+            color: @color;
+            border-left: 2px solid @color;
+        }
+    }
+}
+.side-content{
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+}

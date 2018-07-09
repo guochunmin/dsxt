@@ -1,0 +1,40 @@
+@import "./../base/mixin.less";
+.slipers-wrapper{
+    position:relative;
+    height:180px;
+    .sliper-item{
+        width:100%;
+        height:100%;
+        overflow: hidden;
+        position: absolute;
+        top:0;
+        left:0;
+        display:none;
+        &.active{
+            display:block;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .sliper-indexs{
+        position:absolute;
+        bottom:0;
+        left:0;
+        height:30px;
+        line-height:30px;
+        width:100%;
+        padding-right:10px;
+        text-align: right;
+        .sliper-index{
+            display:inline-block;
+            padding:5px;
+            border-radius: 50%;
+            background: #fff;
+            margin:0 5px;
+            &.active{
+              background: @color;
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+<footer>
+	<%for(let i=0;i<footer.length;i++){%>
+	<a href="<%=footer[i].path%>" <%=i==nav?"class=active":""%>>
+		<i class="iconfont icon-<%=footer[i].icon%>"></i>
+		<span><%=footer[i].label%></span>
+	</a>
+	<%}%>
+</footer>

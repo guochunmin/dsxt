@@ -1,0 +1,150 @@
+@import "//at.alicdn.com/t/font_458931_unex6ij4pyq1if6r.css";
+@import "./../base/mixin.less";
+@import "./../base/common.less";
+@import "./../shared/detailHeader.less";
+.content{
+    bottom:0;
+    background: #fff;
+}
+//.login-wrapper{
+//  h3{
+//      position: relative;
+//      text-align: center;
+//      height:20px;
+//      line-height: 40px;
+//      font-size: 1.8rem;
+//      color:gray;
+//      span{
+//          background: #fff;
+//          padding-left:20px;
+//          padding-right:20px;
+//          z-index: 999;
+//      }
+//      &:after{
+//          content:'';
+//          position: absolute;
+//          top:20px;
+//          left:0;
+//          height:1px;
+//          width: 100%;
+//          background-color: #ddd;
+//          z-index: 0;
+//      }
+//  }
+//}
+html,body{
+    height:100%;
+    width:100%;
+    margin: 0;
+    text-align: center;
+}
+.login-wrapper{
+    display:inline-block;
+    background: #fff;
+    padding:40px;
+    margin: 0 auto;
+//  border:1px solid rgba(0,0,0,.1);
+    border-radius: 5px;
+    h1{
+        text-align: left;
+        font-size:1.3rem;
+        font-weight:400;
+    }
+}
+.login-group{
+    border:1px solid #ddd;
+    padding:5px 10px;
+    border-radius: 4px;
+    line-height:25px;
+    &:first-child{
+        margin-bottom:20px;
+    }
+}
+.login-input{
+    border:0;
+    height:25px;
+    outline:none;
+    margin:0 3px;
+    text-indent: 10px;
+    border-left:1px solid rgba(0,0,0,.1);
+}
+.icon-behind{
+    font-size:1.1rem;
+    &.icon-yes{
+        color:#007DDB;
+    }
+    &.icon-no{
+        color:orangered;
+    }
+}
+.rem-wrapper{
+    text-align: left;
+    padding: 10px 0 20px 0;
+    cursor: pointer;
+    font-size:0.8rem;
+    overflow: hidden;
+}
+.rem-content{
+    display:inline-block;
+}
+.icon-checkfalse{
+    color:#4d5e73;
+}
+.icon-checktrue{
+    color:#007DDB;
+}
+.rem-label{
+    font-weight:700;
+}
+.forget{
+    float: right;
+    color:#4d5e73;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.login{
+    width:100%;
+    height:35px;
+    background: #007DDB;
+    color:#fff;
+    border:none;
+    border-radius: 4px;
+    outline:none;
+}
+.login.active{
+    background: #007AFF;
+}
+
+.third-login{
+    border-top:1px solid #eee;
+    margin:0 -40px;
+    margin-top:50px;
+    padding:10px 40px;
+    h3{
+        font-size:1.1rem;
+        font-weight: 400;
+        text-align:left;
+        line-height: 35px;
+        margin:0;
+    }
+    .third-wrapper{
+        padding:10px 0;
+        text-align: left;
+        .iconfont{
+            font-size:2.3rem;
+            margin-right:10px;
+            &.icon-qq{
+                color:#38A9D2;
+            }
+            &.icon-weixin{
+                color:#3CB034;
+            }
+            &.icon-xinlang{
+                color:#E6162D;
+                font-size:2.5rem;
+            }
+            
+        }
+    }
+}

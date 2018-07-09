@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	    <meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="/css/cart.css"/>
+	</head>
+	<body>
+		<%-include('shared/detailHeader',{htitle:'购物车'})%>
+		<section class="content">
+			<div class="cart-content">
+				<div class="cart-products-wrapper">
+					<%for(var i=0;i<3;i++){%>
+					<div class="shop-panel">
+						<div class="shop-title">
+							<div class="shop-check">
+								<i class="iconfont icon-unchecked"></i>
+							</div>
+							<div class="shop-name">
+								<span>店铺名称</span>
+								<i class="iconfont icon-right"></i>
+							</div>
+							<div class="shop-handdle">
+								<i class="iconfont icon-delete"></i>
+							</div>
+						</div>
+						<div class="shop-product-wrapper">
+							<%for(var j=0;j<3;j++){%>
+							<div class="shop-product">
+								<div class="product-check">
+									<i class="iconfont icon-unchecked"></i>
+								</div>
+								<div class="product-img">
+									<img src="/images/product/product.jpg" alt="product"/>
+								</div>
+								<div class="product-detail">
+									<a href="/cart.html" class="product-name" title="超大颗粒儿童创意吸盘积木超大颗粒儿童创意吸盘积木">超大颗粒儿童创意吸盘积木超大颗粒儿童创意吸盘积木</a>
+									<div class="product-info">
+										<span>灰色DK18249</span>
+										<span>25</span>
+									</div>
+									<div class="product-price">
+										<span class="old-price">￥50</span>
+										<span class="new-price">￥45.9</span>
+									</div>
+									<div class="product-handdle">
+										<div class="product-num-wrapper">
+											<span class="reduce-num">-</span>
+											<input type="text" value="1"/>
+											<span class="add-num">+</span>
+										</div>
+										<i class="iconfont icon-delete"></i>
+									</div>
+								</div>
+							</div>
+							<%}%>
+						</div>
+					</div>
+					<%}%>
+				</div>
+				<%-include('shared/productModule')%>
+			</div>
+			<div class="cart-bottom">
+				<div id="checkAll">
+					<i class="iconfont icon-unchecked"></i>
+					<span>全选</span>
+				</div>
+				<div class="settle-wrapper">
+					<span class="total-price">
+						<span>合计：	</span>
+						<span>￥ 
+							<span id="total-price">40</span>
+						</span>
+					</span>
+					<div id="settled">去结算</div>
+				</div>
+			</div>
+		</section>
+		<%-include('shared/footer')%>
+		
+	</body>
+</html>

@@ -1,0 +1,36 @@
+@import "./base/mixin.less";
+*{
+    padding:0;
+    margin:0;
+    font-size:14px;
+}
+body{
+    background:#fff;
+    font-size:14px;
+    color:#333;
+}
+a{
+    text-decoration:none;
+    outline:none;
+    color:#333;
+}
+.error{
+    max-width:897px;
+    height:404px;
+    margin:50px auto;
+    padding:40px 0 60px;
+    background:url("/images/404/404_bg.jpg") no-repeat center center;
+    position:relative;
+    a{
+        position:absolute;
+        right:240px;
+        bottom:100px;
+        padding:10px 30px;
+        border-radius: 5px;
+        background: @color;
+        color:#fff;
+        &:hover{
+            background: @color_hover;
+        }
+    }
+}

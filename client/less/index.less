@@ -1,0 +1,38 @@
+@import "./base/mixin.less";
+@import "./base/common.less";
+@import "./shared/header.less";
+@import "./shared/footer.less";
+@import "./shared/banner.less";
+@import "./shared/productModule.less";
+.nav-wrapper{
+    position: absolute;
+    top:55px;
+    background-color: #fff;
+    padding:0 10px;
+    z-index: 999;
+    .nav-title{
+        height:40px;
+        line-height:40px;
+        font-size:1.6rem;
+        font-weight: 800;
+        span{
+            display:inline-block;
+            width:calc(~"100% - 30px");
+        }
+    }
+    .nav-content{
+        .flex-wrapper('wrap','flex-start','center','center');
+        height:auto;
+        overflow: hidden;
+        a{
+            flex:1 0 auto;
+            text-align:center;
+            margin:5px;
+            padding:5px 20px;
+            border:1px solid #ddd;
+            border-radius:10px;
+            color:#333;
+            font-size:1.5rem;
+        }
+    }   
+}

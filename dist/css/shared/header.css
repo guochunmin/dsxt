@@ -1,0 +1,1 @@
+header{background-color:#fff;padding:10px;z-index:999;color:grey;border-bottom:1px solid #ddd}header .search-wrapper{height:35px;background-color:#f2f2f2;border-radius:.6rem}header .search-wrapper input[type=text]{width:calc(100% - 30px);height:100%;padding:10px}
